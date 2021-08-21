@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+    <body>
+    <div class="header"><b>Quollab's Resume Generator</b>
+    <h3><em>Task 3</em></h3>
+    </div>
+        <div class="inputMain"> 
+            <div class="inputHeader">INPUT YOUR DETAILS</div>
+            
+            <div class="inputForm"> 
+                <form name='registration' onSubmit="return formValidation();">  
+                    <ul>  
+                                
+                        <li><label for="username">Name :</label></li>  
+                        <li><input type="text" name="username" size="50" /></li>  
+        
+                        <li><label for="address">Address :</label></li>  
+                        <li><input type="text" name="address" size="50" /></li>  
+        
+                        <li><label for="country">Country :</label></li>  
+                        <li>
+                            <select name="country">  
+                                <option selected="" value="Default">(Please select a country)</option>  
+                                <option value="Australia">Australia</option>  
+                                <option value="Canada">Canada</option>  
+                                <option value="India">India</option>  
+                                <option value="Russia">Russia</option>  
+                                <option value="USA">USA</option>  
+                            </select>
+                        </li>  
+                        <li><label for="zip">ZIP Code :</label></li>  
+                        <li><input type="text" name="zip" /></li>  
+        
+                        <li><label for="email">Email :</label></li>  
+                        <li><input type="text" name="email" size="50" /></li> 
+                        <li><label for="contact">Contact No. : (With Country Code)</label></li>  
+                        <li><input type="text" name="contact" size="15" /></li> 
+                        <!--TODO//: can not select both genders-->
+                        <li><label id="gender">Sex :</label>
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Male" name="msex" value="Male" />
+                        <label for="Female">Female</label>                        
+                        <input type="radio" id="Female" name="fsex" value="Female" />
+        
+                        </li> 
+                        <li><label for="education">EDUCATION : </label> </li>
+                        <li><input type="checkbox" name="primary" value="primary"/><span>Primary School</span></li>  
+                        <li><input type="checkbox" name="high" value="high" /><span>High School</span></li>  
+                        <li><input type="checkbox" name="grad" value="grad" /><span>Graduation</span></li>  
+                        <li><label for="skills">Skills : (ctrl+Click to select more than one)</label></li>
+                        <select name="skills" id="skills" multiple>
+                            <option value="C">C</option>
+                            <option value="Cplus">C++</option>
+                            <option value="python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                        </select>
+                        <li><label>Language:</label></li>  
+                        <li><input type="checkbox" name="en" value="en" /><span>English</span></li>  
+                        <li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>  
+        
+                        <li><label for="desc">About :</label></li>  
+                        <li><textarea name="desc" id="desc"></textarea></li>  
+        
+                        <li><input type="submit" name="submit" value="Submit" /></li>  
+                        <li><input type="reset"></li>
+                    </ul>  
+                </form>  
+            </div>
+        </div>
+        <div class="previewMain">
+            <div class="inputHeader"><b>PREVIEW RESUME</b></div>
+            
+        </div>
+        
+        <script src="form.js"></script>   
+    </body>
+</html>
